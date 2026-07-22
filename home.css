@@ -16,6 +16,11 @@ nav {
 
     a {
         color: var(--text-nav-color);
+        transition-duration: 0.4s
+    }
+
+    a:hover {
+        color: var(--detail-color);
     }
 
     img {
@@ -67,7 +72,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25vh 0;
+    padding: 25vh 0 10vh 0;
 
     div .hero {
         display: flex;
@@ -103,12 +108,11 @@ main {
     }
 }
 
-section {
+section#projetos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    padding: 0 3%;
+    padding: 15vh 3%;
 }
 
 .header-projeto-destaque {
@@ -129,6 +133,7 @@ section {
     grid-template-columns: auto auto;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1rem 0 2rem 0;
 }
 
 .container-projeto {
@@ -188,9 +193,82 @@ section {
 .tag {
     font-family: var(--fonte-teammates);
     font-size: 0.75rem;
-    font-weight: 300;
+    font-weight: 400;
     border: 2px var(--background-color-glass) solid;
     box-shadow: 2;
     border-radius: 10px;
     padding: 0.3rem 0.5rem;
+}
+
+.projeto-faleconosco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    border: 2px var(--background-color-glass) solid;
+    box-shadow: 2;
+    border-radius: 1.875rem;
+    gap: 1rem;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+
+    p {
+        font-family: var(--fonte-p);
+        font-size: 0.75rem;
+        line-height: normal;
+        color: var(--white-color);
+    }
+
+    i {
+        color: var(--detail-color);
+    }
+
+}
+
+.projeto-faleconosco-btn {
+    display: flex;
+    align-items: baseline;
+    border: 2px var(--detail-color) solid;
+    box-shadow: 2;
+    border-radius: 1.875rem;
+    padding: 5px 15px;
+    gap: 0.5rem;
+
+    p {
+        color: var(--detail-color);
+        font-family: var(--fonte-secundaria);
+        font-weight: 600;
+    }
+}
+
+section#equipe {
+    display: flex;
+    flex-direction: column;
+
+    .header-equipe-destaque {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-equipe {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 3.5rem;
+    }
+
+    .membro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+
+        h3 {
+            font-size: 1.56rem;
+            font-family: var(--fonte-secundaria);
+            color: var(--white-color);
+            font-weight: 600;
+        }
+
+    }
 }
