@@ -18,4 +18,6 @@
 
 html {
     background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
 }
