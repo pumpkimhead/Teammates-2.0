@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <section class="min-h-screen bg-[#010709] flex items-center ">
+    <section id="inicio" class="min-h-screen bg-[#010709] flex items-center">
         <div class="w-full max-w-6xl mx-auto px-8 flex items-center justify-between ">
-            <div class="max-w-xl m-20">
+            <div class="max-w-xl ml-20">
                 <span class="font-[var(--fonte-teammates)] text-[var(--text-color)] text-xl">
                     TEAMMATES
                 </span>
